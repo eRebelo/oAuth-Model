@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id"
+          content="303213010663-lq91naqapi6l3etk9iq95qkp3v42t943.apps.googleusercontent.com">
+    <title>Home | CI&T</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body onload="loadin()">
+<div id="showSignIn" style="display: none;">
+    <div id="login-button" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+</div>
+<div id="showSignOut" style="display: none;">
+    <!--div><a href="#" onclick="signOut();">Sign out</a></div-->
+    <!--div><a href="#" onclick="disassociate();">Disassociate App and Site (easily undone)</a></div-->
+    <div><a href="#" onclick="disassociate();">Sign out</a></div>
+</div>
+
+<h3>Private Content: Only Logged in</h3>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/home.js"></script>
+<script src="https://apis.google.com/js/client.js"></script>
+</body>
+</html>
